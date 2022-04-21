@@ -21,6 +21,11 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('Pre-Complete') {
+            steps {
+                echo 'This is pre-complete step'
+            }
+        }
         stage('Complete') {
             steps {
                 echo 'Job complete!'
