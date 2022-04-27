@@ -26,10 +26,5 @@ pipeline {
                 echo 'This is pre-complete step'
             }
         }
-        stage('Complete') {
-            steps {
-                echo 'Job complete!'
-            }
-        }
     }
 }
