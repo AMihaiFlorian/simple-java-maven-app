@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                cd /var/jenkins_home/workspace/
+                cd /var/jenkins_home/workspace/test\ jenkinsfile
+            }
+            steps {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
